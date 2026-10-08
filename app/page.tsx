@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
-import Products from "@/components/Products";
+import Marquee from "@/components/Marquee";
+import Services from "@/components/Services";
 import Why from "@/components/Why";
 import Steps from "@/components/Steps";
-import Visit from "@/components/Visit";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
 
@@ -14,11 +14,11 @@ export default function Home() {
       <Header />
       <main id="top">
         <Hero />
-        <Stats />
-        <Products />
+        <Marquee />
+        <Services />
         <Why />
         <Steps />
-        <Visit />
+        <Contact />
       </main>
       <Footer />
       <WhatsAppFab />

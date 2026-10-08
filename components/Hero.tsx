@@ -1,23 +1,25 @@
-import { DEFAULT_MSG, mapLink, telLink, waLink } from "@/lib/shop";
-import SeatPicker from "./SeatPicker";
+import { mapLink, phoneDisplay, telLink } from "@/lib/shop";
+import SeatConfigurator from "./SeatConfigurator";
 
 export default function Hero() {
   return (
     <div className="hero">
       <div className="wrap">
         <div>
-          <span className="pill">Thrissur&apos;s bike accessory shop</span>
-          <h1>Ride in style. Sit in comfort.</h1>
+          <div className="eyebrow">Seat covers &amp; vehicle interiors</div>
+          <h1>
+            Crafted seats. <i>Finished</i> interiors.
+          </h1>
           <p className="sub">
-            Premium bike seat covers, accessories and vehicle add-ons with attractive designs and prices that fit your budget.
+            Custom-stitched covers for bikes, scooters and cars, and complete cabin upholstery, made by hand in
+            Thrissur and fitted to perfection.
           </p>
           <div className="cta">
-            <a className="btn btn-wa" href={waLink(DEFAULT_MSG)} target="_blank" rel="noopener">Chat on WhatsApp</a>
-            <a className="btn btn-road" href={telLink}>Call the shop</a>
-            <a className="btn btn-line" href={mapLink} target="_blank" rel="noopener">Get directions</a>
+            <a className="btn btn-red" href={telLink}>Call {phoneDisplay.replace(/^\+91 /, "")}</a>
+            <a className="btn btn-out" href={mapLink} target="_blank" rel="noopener">Get directions</a>
           </div>
         </div>
-        <SeatPicker />
+        <SeatConfigurator />
       </div>
     </div>
   );
