@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo_Black, Manrope } from "next/font/google";
+import { DM_Sans, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const display = Archivo_Black({ weight: "400", subsets: ["latin"], variable: "--font-display" });
-const body = Manrope({ weight: ["400", "600", "800"], subsets: ["latin"], variable: "--font-body" });
+const display = Fraunces({ subsets: ["latin"], axes: ["opsz"], variable: "--font-display" });
+const body = DM_Sans({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
-  title: "Fancy Decor - Seat Bazar | Bike Seat Covers & Accessories, Thrissur",
-  description: "Stylish bike seat covers, bike accessories and vehicle accessories in Thrissur, Kerala.",
+  title: "Fancy Decor - Seat Bazar | Crafted Seat Covers & Interiors, Thrissur",
+  description: "Handcrafted bike and car seat covers and vehicle interior upholstery in Thrissur, Kerala. Call 9847118999.",
 };
 
 export const viewport: Viewport = {
